@@ -41,7 +41,7 @@ var family = ['Tyler', 'Jordan', 'Ryan', 'Alice', 'Ireland'];
 
 // Do not edit the code below.
 var nums = [1,2,3,6,22,98,45,23,22,12];
-let evensArr = []
+let evensArr = [];
 // Do not edit the code above.
 
 /*
@@ -50,13 +50,13 @@ let evensArr = []
 
 //Code Here
 
-// for (let i = 0; i < nums.length; i++) {
-//   if (nums[i] % 2 === 0) {
-//     evensArr.push(nums[i]);
-//   } 
+for (let i = 0; i < nums.length; i++) {
+  if (nums[i] % 2 === 0) {
+    evensArr.push(nums[i]);
+  } 
   
-// }
-// console.log(evensArr);
+}
+console.log(evensArr);
 
 
 ////////// PROBLEM 5 //////////
@@ -71,17 +71,17 @@ var score = 58
 
 //Code Here
 
-// if (score >= 90) {
-//   console.log('A');
-// } else if (score >= 80) {
-//   console.log('B');
-// } else if (score >= 70) {
-//   console.log('C');
-// } else if ( score >= 60) {
-//   console.log('D');
-// } else  {
-//     console.log('F');
-//   }
+if (score >= 90) {
+  console.log('A');
+} else if (score >= 80) {
+  console.log('B');
+} else if (score >= 70) {
+  console.log('C');
+} else if ( score >= 60) {
+  console.log('D');
+} else  {
+    console.log('F');
+  }
 
 
 ////////// Intermediate Problems //////////
@@ -227,15 +227,102 @@ break;
 
 //Code Here
 
-for (let i = 1; i <= 100; i++) {
-  if (i % 3 === 0 && i % 5 === 0) {
-    console.log('Devmountain');
-  } else if (i % 5 === 0) {
-    console.log('mountain');
-  } else if (i % 3 === 0) {
-    console.log('Dev');
-  } else {
-    console.log(i);
-  }
+// for (let i = 1; i <= 100; i++) {
+//   if (i % 3 === 0 && i % 5 === 0) {
+//     console.log('Devmountain');
+//   } else if (i % 5 === 0) {
+//     console.log('mountain');
+//   } else if (i % 3 === 0) {
+//     console.log('Dev');
+//   } else {
+//     console.log(i);
+//   }
   
-} 
+// } 
+
+
+let devmountain = [];
+
+for (let i = 0; i <= 99; i++) {
+  devmountain.push(i + 1);
+}
+console.log(devmountain);
+
+// for (let i = 0; i < devmountain.length - 1; i++ ) {
+//   while(devmountain[i] % 3 === 0 && devmountain[i] % 5 === 0) {
+//     console.log(devmountain[i], 'Devmountain');
+//     i++;
+//   }
+//   while(devmountain[i] % 3 === 0) {
+//     console.log(devmountain[i], 'Dev');
+//     i++;
+//   }
+//   while(devmountain[i] % 5 === 0) {
+//     console.log(devmountain[i], 'mountain');
+//     i++;
+//   }
+  
+//   console.log(devmountain[i]);
+// }
+
+
+// for (let i = 1; i <= 100; i++ ) {
+//   // console.log('----', i,x)
+
+//   while(i % 3 === 0 && i % 5 === 0) {
+//     console.log(i, 'Devmountain');
+//     i++;
+//   }
+
+//   while(i % 3 === 0) {
+//     console.log(i, 'Dev');
+//     i++;
+//   }
+ 
+//   while(i % 5 === 0) {
+//     console.log(i, 'mountain');
+//     i++;
+//   }
+  
+
+  
+//   if(i % 3 !== 0 || i % 5 !== 0) {
+//     i--
+//     console.log(i);
+    
+//   } else {
+//     console.log(i);
+//   }
+// }
+
+
+for (let i = 1, x = 0; i <= 100; i++ ) {
+
+ if (i % 3 === 0 && i % 5 === 0) {
+    x = 1;
+ } else if (i % 3 === 0) {
+    x = 2;
+ } else if (i % 5 === 0) {
+    x = 3;
+ } else {
+    x = 4;
+ }
+
+switch(x) {
+case 1:
+  console.log('Devmountain');
+  break;
+  case 2:
+    console.log('Dev');
+    break;
+    case 3:
+      console.log('Mountain');
+      break;
+      default:
+        console.log(i);
+        break;
+
+
+    }
+  
+}
